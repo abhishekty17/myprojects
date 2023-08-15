@@ -1,0 +1,165 @@
+/* basic css  */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+.page-action-container{
+    border: 1px solid gray;
+    height:3rem;
+    display: flex;
+    align-items: flex-end;
+    background: gray;
+}
+.page-action{
+    margin: 0.5rem;
+}
+
+/* specific height */
+.menu_bar {
+    border: 1px solid gray;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: lightgrey;
+}
+
+.menu_bar>*{
+    display: inline-block;
+     margin-right: 1rem;
+}
+
+.formula_container {
+    border: 1px solid gray;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    background-color: lightblue; 
+}
+
+.address_bar{
+    width: 5rem;
+    margin-left: 1rem;
+}
+.formula_bar{
+    width: calc(100vw - 6rem - 2rem );
+}
+
+
+/* ******************grid starts*********************/
+/* grid -> remaining height */
+.grid_container {
+    /* border: 5px solid red; */
+    height: calc(100vh - 7rem - 3rem);
+    overflow: auto;
+    position: relative;
+    /* background-color: lightgrey; */
+}
+
+.cell {
+    border: 0.5px solid gray;
+    height: 1.5rem;
+    width: 5rem;
+    padding-top: 0.1rem;
+    font-size: 12px;
+    outline: none;
+    text-align: center;
+    overflow: hidden;
+    /* background-color: lightpink; */
+}
+.row{
+        border: 0.5px solid gray;
+        height: 1.5rem;
+        width: 5rem;
+        outline: none;
+        text-align: center;
+        padding-top: 0.2rem;
+        background:lightgray;
+}
+.col{
+    border: 0.5px solid gray;
+    height: 1.5rem;
+    width: 2rem;
+    text-align: center;
+    padding-top: 0.2rem;
+    background: lightgrey;
+}
+
+.tl_cell {
+    height: 1.4rem;
+    width: 2rem;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background: grey;
+    border-right: 5px solid lightgray;
+    border-bottom: 5px solid lightgray;
+    /* position:absolute; */
+}
+
+.top_row {
+    display: flex;
+    top: 0;
+    left: 2rem;
+}
+
+.left_col {
+    position: sticky;
+    left: 0;
+    top: 1.4rem;
+}
+
+.grid {
+    position: absolute;
+    left: 2.01rem;
+    top: -0.1rem;
+}
+
+
+.rows {
+    display: flex;
+}
+
+/* ------------------------------- */
+
+.sheets_container {
+    height: 2rem;
+    display: flex;
+    background: grey;
+}
+
+.add_sheet {
+    height: 2rem;
+    width: 2rem;
+    border: 2px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sheet {
+    height: 2rem;
+    width: 4rem;
+    border: 1px solid gray;
+    text-align: center;
+    padding-top: 0.2rem;
+    background: white;
+}
+
+/* ------------------------------------- */
+.colour-prop{
+    position: relative;
+}
+
+.colour-prop> input{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
